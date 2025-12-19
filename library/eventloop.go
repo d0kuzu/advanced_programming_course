@@ -1,6 +1,7 @@
 package library
 
 import (
+	"advance/helpers/console"
 	"advance/helpers/reader"
 	"fmt"
 )
@@ -72,5 +73,7 @@ func Start() {
 		default:
 			fmt.Println("Unknown action: " + action)
 		}
+
+		console.ClearScreen()
 	}
 }
