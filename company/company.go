@@ -2,7 +2,6 @@ package company
 
 import (
 	"advance/company/employee"
-	"advance/company/employee/employees"
 	"fmt"
 )
 
@@ -29,13 +28,4 @@ func (c *Company) ListEmployees() {
 		fmt.Printf("ID %d: ", key)
 		value.GetDetails()
 	}
-}
-
-func Start() {
-	company := GetCompany()
-
-	company.ListEmployees()
-	company.AddEmployee(&employees.FullTime{})
-	company.AddEmployee(&employees.PartTime{})
-	company.ListEmployees()
 }
