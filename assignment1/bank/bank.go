@@ -1,7 +1,7 @@
 package bank
 
 import (
-	"advance/bank/transaction"
+	transaction2 "advance/assignment1/bank/transaction"
 	"errors"
 )
 
@@ -11,12 +11,12 @@ func GetAccount() *Account {
 
 type Account struct {
 	balance      float64
-	transactions []*transaction.Transaction
+	transactions []*transaction2.Transaction
 }
 
 func (account *Account) Deposit(amount float64) {
 	account.balance += amount
-	account.transactions = append(account.transactions, &transaction.Transaction{Type: transaction.Deposit, Amount: amount})
+	account.transactions = append(account.transactions, &transaction2.Transaction{Type: transaction2.Deposit, Amount: amount})
 }
 
 func (account *Account) Withdraw(amount float64) error {
@@ -25,7 +25,7 @@ func (account *Account) Withdraw(amount float64) error {
 	}
 
 	account.balance -= amount
-	account.transactions = append(account.transactions, &transaction.Transaction{Type: transaction.Withdraw, Amount: amount})
+	account.transactions = append(account.transactions, &transaction2.Transaction{Type: transaction2.Withdraw, Amount: amount})
 	return nil
 }
 

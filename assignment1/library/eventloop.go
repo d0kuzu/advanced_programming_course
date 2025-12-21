@@ -1,8 +1,8 @@
 package library
 
 import (
-	"advance/helpers/console"
-	"advance/helpers/reader"
+	"advance/assignment1/helpers/console"
+	"advance/assignment1/helpers/reader"
 	"fmt"
 )
 

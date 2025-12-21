@@ -1,10 +1,9 @@
 package shape
 
 import (
+	. "advance/assignment1/shape/shapes"
 	"fmt"
 	"reflect"
-
-	. "advance/shape/shapes"
 )
 
 func Start() {

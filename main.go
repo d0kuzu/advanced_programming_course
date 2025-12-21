@@ -1,6 +1,6 @@
 package main
 
-import "advance/bank"
+import "advance/assignment1/bank"
 
 func main() {
 	//library.Start()

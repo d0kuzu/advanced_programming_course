@@ -1,7 +1,7 @@
 package company
 
 import (
-	"advance/company/employee"
+	"advance/assignment1/company/employee"
 	"fmt"
 )
 
