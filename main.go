@@ -1,9 +1,10 @@
 package main
 
-import "advance/company"
+import "advance/bank"
 
 func main() {
 	//library.Start()
 	//shape.Start()
-	company.Start()
+	//company.Start()
+	bank.Start()
 }
